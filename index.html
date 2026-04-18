@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh | Web Technology Student | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle-container">
+        <input type="checkbox" id="theme-toggle">
+        <label for="theme-toggle" class="theme-toggle-label"></label>
+    </div>
+
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-code"></i> Harsh
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home/Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content animate-on-scroll">
+            <h1>Hi, I'm <span class="highlight">Harsh</span></h1>
+            <p class="typing"></p>
+            <a href="#projects" class="cta-btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="animate-on-scroll">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-img">
+                <i class="fas fa-user-graduate"></i>
+            </div>
+            <div class="about-text">
+                <p>I'm a passionate <strong>Web Technology Student</strong> at <strong>Hartron Skill Centre, Ambala City</strong>.</p>
+                <p>Completed my 12th from <strong>HBSC</strong> and currently building modern, responsive websites with HTML, CSS, JavaScript.</p>
+                <p>Aspiring Full-Stack Developer focused on creating amazing user experiences and pixel-perfect designs.</p>
+                <a href="#contact" class="cta-btn">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card animate-on-scroll">
+                <div class="skill-icon">HTML5</div>
+                <h3>HTML</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-bar" data-percent="95%"></div>
+                </div>
+            </div>
+            <div class="skill-card animate-on-scroll">
+                <div class="skill-icon">🎨</div>
+                <h3>CSS</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-bar" data-percent="90%"></div>
+                </div>
+            </div>
+            <div class="skill-card animate-on-scroll">
+                <div class="skill-icon">⚡</div>
+                <h3>JavaScript</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-bar" data-percent="85%"></div>
+                </div>
+            </div>
+            <div class="skill-card animate-on-scroll">
+                <div class="skill-icon">📱</div>
+                <h3>Responsive</h3>
+                <div class="skill-bar-container">
+                    <div class="skill-bar" data-percent="88%"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <!-- Todo App -->
+            <div class="project-card animate-on-scroll" id="todo-project">
+                <div class="project-header">
+                    <h3>📝 Interactive Todo App</h3>
+                </div>
+                <div class="project-content">
+                    <div class="project-title">Add, Delete & Persist Tasks</div>
+                    <form id="todo-form">
+                        <input type="text" id="todo-input" placeholder="Add a new task..." required>
+                        <button type="submit"><i class="fas fa-plus"></i></button>
+                    </form>
+                    <ul id="todo-list"></ul>
+                </div>
+            </div>
+
+            <!-- Calculator -->
+            <div class="project-card animate-on-scroll">
+                <div class="project-header">
+                    <h3>🧮 Smart Calculator</h3>
+                </div>
+                <div class="project-content">
+                    <div class="project-title">Basic Operations</div>
+                    <div id="calc-display">0</div>
+                    <div class="calc-container">
+                        <button class="calc-btn" data-value="C">C</button>
+                        <button class="calc-btn" data-value="&#247;">/</button>
+                        <button class="calc-btn" data-value="*">×</button>
+                        <button class="calc-btn" data-value="-">-</button>
+                        <button class="calc-btn" data-value="7">7</button>
+                        <button class="calc-btn" data-value="8">8</button>
+                        <button class="calc-btn" data-value="9">9</button>
+                        <button class="calc-btn" data-value="+">+</button>
+                        <button class="calc-btn" data-value="4">4</button>
+                        <button class="calc-btn" data-value="5">5</button>
+                        <button class="calc-btn" data-value="6">6</button>
+                        <button class="calc-btn" data-value="1">1</button>
+                        <button class="calc-btn" data-value="2">2</button>
+                        <button class="calc-btn" data-value="3">3</button>
+                        <button class="calc-btn" data-value="0" style="grid-column: span 2;">0</button>
+                        <button class="calc-btn" data-value=".">.</button>
+                        <button class="calc-btn" data-value="=">=</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Weather App -->
+            <div class="project-card animate-on-scroll">
+                <div class="project-header">
+                    <h3>🌤️ Weather App</h3>
+                </div>
+                <div class="project-content">
+                    <div class="project-title">Real-time Weather</div>
+                    <div class="weather-container">
+                        <input type="text" id="weather-city" placeholder="Enter city (e.g. Ambala)">
+                        <button id="weather-btn">Get Weather</button>
+                    </div>
+                    <div id="weather-info">Enter city to see weather...</div>
+                </div>
+            </div>
+
+            <!-- Card Flipper Demo (3D) -->
+            <div class="project-card animate-on-scroll">
+                <div class="project-header">
+                    <h3>🎴 3D Card Effects</h3>
+                </div>
+                <div class="project-content text-center">
+                    <div class="project-title">Hover to Flip</div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <i class="fas fa-gem" style="font-size: 4rem; color: var(--accent);"></i>
+                                <h4>CSS 3D Flip</h4>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Advanced CSS animations & transforms</p>
+                                <i class="fas fa-magic"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact-grid">
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="contact-name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="contact-email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="contact-msg" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="button" id="contact-submit" onclick="submitForm()">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Ambala City<br>Hartron Skill Centre</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <h4>Email</h4>
+                        <p>harsh@example.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+91XXXXXXXXXX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+<a href="https://www.instagram.com/__harsh__.22" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 Harsh. Built with ❤️ at Hartron Skill Centre.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <style>
+        /* Additional Flip Card Styles */
+        .flip-card {
+            perspective: 1000px;
+            height: 200px;
+        }
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            background: var(--glass-bg);
+            border-radius: 15px;
+            border: 1px solid var(--glass-border);
+            backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+        .flip-card-back {
+            transform: rotateY(180deg);
+        }
+        .todo-form button {
+            position: absolute;
+            right: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        #todo-input {
+            padding-right: 4rem !important;
+        }
+    </style>
+</body>
+</html>
+
